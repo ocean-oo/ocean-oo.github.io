@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Thành Viên KCF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"] {
+            width: calc(100% - 20px);
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff; /* Blue color, adjust as KCF's branding */
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .footer-note {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #999;
+        }
+        .footer-note a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer-note a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng Quý Khách đến với Câu lạc bộ thành viên KCF!</h1>
+        <p>Đăng ký để nhận ưu đãi đặc biệt, điểm tích lũy và những tin tức độc quyền từ KCF.</p>
+        
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="fullName">Họ và Tên:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Địa chỉ Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Ngày sinh:</label>
+                <input type="date" id="dob" name="dob">
+            </div>
+            <button type="submit">Đăng ký thành viên</button>
+        </form>
+
+        <p id="confirmationMessage" style="display:none; margin-top:20px; color: green; font-weight: bold;">Cảm ơn Quý Khách! Quý Khách đã đăng ký thành công thành viên KCF. Hãy kiểm tra email để biết thêm chi tiết về ưu đãi của chúng tôi.</p>
+
+        <p class="footer-note">
+            Bằng việc đăng ký, bạn đồng ý với 
+            <a href="#">Chính sách Bảo mật</a> và 
+            <a href="#">Điều khoản Dịch vụ</a> của KCF.
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn form gửi đi theo cách truyền thống
+
+            // Ở đây bạn có thể thêm logic để gửi dữ liệu form đi (ví dụ: đến một API backend)
+            // For now, we'll just simulate success and show the message.
+
+            document.getElementById('registrationForm').style.display = 'none'; // Ẩn form
+            document.getElementById('confirmationMessage').style.display = 'block'; // Hiển thị thông báo xác nhận
+        });
+    </script>
+</body>
+</html>
