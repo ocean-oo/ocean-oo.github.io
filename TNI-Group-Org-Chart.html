@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cấu Trúc Tổ Chức TNI Group</title>
+<style>
+  body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+  .organization-chart { list-style: none; padding-left: 0; }
+  .organization-chart li { margin: 10px 0; position: relative; }
+  .organization-chart li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-left: 1px solid #ccc;
+    height: 100%;
+    width: 1px;
+  }
+  .organization-chart li:not(:first-child):before { top: -10px; height: calc(100% + 10px); }
+  .organization-chart li:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: -20px;
+    border-top: 1px solid #ccc;
+    width: 20px;
+    height: 1px;
+  }
+  .organization-chart ul { list-style: none; padding-left: 40px; }
+  .department-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+  .department-card.group { background-color: #e0f7fa; border-color: #00bcd4; }
+  .department-card.division { background-color: #e8f5e9; border-color: #4caf50; }
+  .department-card.unit { background-color: #fffde7; border-color: #ffeb3b; }
+  h2, h3, h4 { color: #0288d1; margin-top: 0; }
+</style>
+</head>
+<body>
+
+  <h1>Cấu Trúc Tổ Chức TNI Group (Dữ liệu mẫu)</h1>
+
+  <ul class="organization-chart">
+    <li>
+      <div class="department-card group">
+        <h2>TNI GROUP</h2>
+        <p><strong>Chức năng:</strong> Điều hành, quản lý tập trung chiến lược toàn cầu và các thị trường nội địa. Đảm bảo tuân thủ các quy định, chính sách chung và phát triển bền vững. Phát triển chiến lược dài hạn, quản lý rủi ro và đầu tư.</p>
+      </div>
+      <ul>
+        <li>
+          <div class="department-card division">
+            <h3>Ban Tổng Giám Đốc</h3>
+            <p><strong>Chức năng:</strong> Chịu trách nhiệm về định hướng chiến lược tổng thể, ra quyết định cấp cao, và giám sát hiệu suất toàn Tập đoàn. Bao gồm Tổng Giám đốc, các Phó Tổng Giám đốc và Hội đồng quản trị.</p>
+          </div>
+        </li>
+        <li>
+          <div class="department-card division">
+            <h3>Khối Tài Chính & Kế Toán</h3>
+            <p><strong>Chức năng:</strong> Quản lý dòng tiền tập trung, lập kế hoạch tài chính, báo cáo tài chính, kiểm soát ngân sách, và quản lý rủi ro tài chính cho toàn Tập đoàn và các công ty thành viên. Quản lý hoạt động thu chi, kiểm soát chi phí.</p>
+          </div>
+          <ul>
+            <li><div class="department-card unit"><h4>Phòng Kế Toán Tổng Hợp</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Phân Tích Tài Chính</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Kiểm Toán Nội Bộ</h4></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="department-card division">
+            <h3>Khối Kinh Doanh Quốc Tế</h3>
+            <p><strong>Chức năng:</strong> Phát triển thị trường quốc tế, xây dựng chiến lược kinh doanh toàn cầu, quản lý đối tác và xuất nhập khẩu. Nghiên cứu và mở rộng thị trường mới.</p>
+          </div>
+          <ul>
+            <li><div class="department-card unit"><h4>Phòng Phát Triển Thị Trường Quốc Tế</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Quản Lý Xuất Nhập Khẩu</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Chăm Sóc Khách Hàng Quốc Tế</h4></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="department-card division">
+            <h3>Khối Kinh Doanh Nội Địa</h3>
+            <p><strong>Chức năng:</strong> Điều hành các hoạt động kinh doanh tại thị trường trong nước, bao gồm quản lý kênh phân phối, bán hàng và phát triển sản phẩm theo đặc thù vùng miền.</p>
+          </div>
+          <ul>
+            <li><div class="department-card unit"><h4>Phòng Kinh Doanh Miền Bắc</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Kinh Doanh Miền Trung</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Kinh Doanh Miền Nam</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Phát Triển Kênh Phân Phối</h4></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="department-card division">
+            <h3>Khối Sản Xuất & Vận Hành</h3>
+            <p><strong>Chức năng:</strong> Giám sát quy trình sản xuất, quản lý chuỗi cung ứng, đảm bảo chất lượng sản phẩm và tối ưu hóa hiệu suất vận hành.</p>
+          </div>
+          <ul>
+            <li><div class="department-card unit"><h4>Phòng Sản Xuất</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Quản Lý Chất Lượng</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Cung Ứng & Logictics</h4></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="department-card division">
+            <h3>Khối Marketing & Truyền Thông</h3>
+            <p><strong>Chức năng:</strong> Xây dựng thương hiệu, thực hiện các chiến dịch marketing, quảng bá sản phẩm và quản lý các hoạt động truyền thông nội bộ và đối ngoại.</p>
+          </div>
+          <ul>
+            <li><div class="department-card unit"><h4>Phòng Marketing Sản Phẩm</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Quan Hệ Công Chúng & Thương Hiệu</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Nghiên Cứu Thị Trường</h4></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="department-card division">
+            <h3>Khối Nguồn Nhân Lực & Hành Chính</h3>
+            <p><strong>Chức năng:</strong> Quản lý các vấn đề về nhân sự, tuyển dụng, đào tạo, phát triển nguồn nhân lực và duy trì các hoạt động hành chính, quản lý văn phòng.</p>
+          </div>
+          <ul>
+            <li><div class="department-card unit"><h4>Phòng Tuyển Dụng & Đào Tạo</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Chế Độ & Phúc Lợi</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Hành Chính & Quản Trị</h4></div></li>
+          </ul>
+        </li>
+        <li>
+          <div class="department-card division">
+            <h3>Khối Công Nghệ & Phát Triển (R&D)</h3>
+            <p><strong>Chức năng:</strong> Nghiên cứu và phát triển sản phẩm mới, ứng dụng công nghệ, cải tiến quy trình và xây dựng các giải pháp kỹ thuật cho Tập đoàn.</p>
+          </div>
+          <ul>
+            <li><div class="department-card unit"><h4>Phòng Phát Triển Sản Phẩm Mới</h4></div></li>
+            <li><div class="department-card unit"><h4>Phòng Nghiên Cứu Công Nghệ</h4></div></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>
