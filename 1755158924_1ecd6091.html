@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNI King Coffee - Vua Cà Phê Việt Nam</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        header .logo {
+            max-width: 150px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #d4af37;
+        }
+        .hero {
+            background: url('https://images.squarespace-cdn.com/content/v1/5918b04be6f2e1a850557ae8/1621896773344-9Y6P62D0321T21F77JLI/TNI-King-Coffee-USA-Anaheim-California-Grand-Opening-May-2021-12.jpg?format=2500w') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 2rem;
+            margin-top: 60px; /* To offset for fixed header */
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .btn {
+            background-color: #d4af37;
+            color: #1a1a1a;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #c09e2e;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: #d4af37;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card-content {
+            padding: 20px;
+        }
+        .product-card-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .product-card-content p {
+            font-size: 1rem;
+            color: #666;
+        }
+        #about {
+            background: #fff;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            text-align: left;
+        }
+        .about-content img {
+            max-width: 400px;
+            border-radius: 8px;
+        }
+        #stores {
+            background: url('https://b.zmtcdn.com/data/pictures/2/18849642/083528b7f14a4b648e89a544f7f6ff8c.jpg') no-repeat center center/cover;
+            color: white;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+        }
+        .store-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 40px;
+        }
+        .store-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+        .store-gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/f/f9/Logo-king-coffee.png/425px-Logo-king-coffee.png" alt="TNI King Coffee Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>KING COFFEE</h1>
+                <p>Hương Vị Của Một Đế Chế Việt Toàn Cầu</p>
+                <a href="#products" class="btn">Khám Phá Sản Phẩm</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">Câu Chuyện Thương Hiệu</h2>
+                <div class="about-content">
+                    <img src="https://lehoangdiepthao.com/wp-content/uploads/2021/04/LHDT-Profile-Picture-4.jpg" alt="Nhà sáng lập Lê Hoàng Diệp Thảo">
+                    <div>
+                        <p><strong>King Coffee</strong> được sáng lập bởi bà Lê Hoàng Diệp Thảo, một nữ tướng đầy kinh nghiệm và tâm huyết của ngành cà phê Việt Nam. Với khát vọng nâng tầm vị thế của cà phê Việt trên bản đồ thế giới, King Coffee ra đời và chinh phục thị trường quốc tế trước khi quay trở về phục vụ người tiêu dùng trong nước.</p>
+                        <p>Chúng tôi kiểm soát mọi công đoạn, từ những hạt cà phê được tuyển chọn kỹ lưỡng từ các vùng trồng nổi tiếng như Buôn Ma Thuột, Cầu Đất, đến quy trình rang xay bí mật, để đảm bảo mỗi tách cà phê bạn thưởng thức đều xứng đáng với danh hiệu “King”.</p>
+                        <p>Hiện nay, King Coffee đã có mặt tại hơn 120 quốc gia và vùng lãnh thổ, hiện thực hóa khát vọng đưa tinh hoa cà phê Việt Nam ra toàn cầu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="container">
+                <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+                <div class="product-grid">
+                    <!-- Product 1: Cà phê hòa tan -->
+                    <div class="product-card">
+                        <img src="https://www.kingcoffee.com.vn/wp-content/uploads/2023/12/3in1-Tui-45x16g-1.jpg" alt="Cà phê hòa tan King Coffee">
+                        <div class="product-card-content">
+                            <h3>Cà Phê Hòa Tan 3in1</h3>
+                            <p>Đậm đà, tiện lợi, được làm từ những hạt cà phê Robusta chất lượng nhất, mang đến cho bạn một ngày làm việc tỉnh táo và thành công.</p>
+                        </div>
+                    </div>
+                    <!-- Product 2: Cà phê rang xay -->
+                    <div class="product-card">
+                        <img src="https://www.kingcoffee.com.vn/wp-content/uploads/2023/12/Gourmet-Blend-500g-1.jpg" alt="Cà phê rang xay King Coffee">
+                        <div class="product-card-content">
+                            <h3>Cà Phê Rang Xay</h3>
+                            <p>Dòng sản phẩm rang xay với công thức bí truyền phương Đông, mang đến hương vị nguyên bản, đậm đà cho những người sành cà phê.</p>
+                        </div>
+                    </div>
+                    <!-- Product 3: Cà phê Espresso -->
+                    <div class="product-card">
+                        <img src="https://www.kingcoffee.com.vn/wp-content/uploads/2023/12/Espresso-100x2.5g.jpg" alt="Cà phê Espresso King Coffee">
+                        <div class="product-card-content">
+                            <h3>Cà Phê Espresso</h3>
+                            <p>Được làm từ 100% hạt Arabica với vị chua thanh và hương thơm quyến rũ, mang đến trải nghiệm cà phê chuẩn Ý ngay tại nhà.</p>
+                        </div>
+                    </div>
+                     <!-- Product 4: Cà phê viên nén -->
+                     <div class="product-card">
+                        <img src="https://shop.kingcoffee.com.vn/media/catalog/product/cache/2a5f543e49106d79555c3c9e68370f69/c/a/capsule-colombia-55g-1.jpg" alt="Cà phê viên nén King Coffee">
+                        <div class="product-card-content">
+                            <h3>Cà Phê Viên Nén</h3>
+                            <p>Giải pháp cà phê hiện đại, nhanh chóng và tiện lợi. Tương thích với các dòng máy pha cà phê viên nén phổ biến, mang lại ly cà phê chất lượng chỉ trong vài giây.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stores" class="section">
+            <div class="container">
+                <h2 class="section-title">Không Gian Quán King Coffee</h2>
+                <p style="max-width: 800px; margin: 0 auto 40px auto; font-size: 1.1rem;">Không gian quán King Coffee được thiết kế sang trọng, kết hợp giữa văn hóa Đông - Tây, là nơi lý tưởng để gặp gỡ đối tác, bạn bè hay đơn giản là tận hưởng những giây phút thư giãn bên ly cà phê tuyệt hảo.</p>
+                <div class="store-gallery">
+                    <img src="https://media.vneconomy.vn/w800/images/upload/2021/05/24/us-cafe-1-9878-1621842940.jpg" alt="Không gian quán King Coffee 1">
+                    <img src="https://lehoangdiepthao.com/wp-content/uploads/2021/05/US-cafe-5-9610-1621842940.jpg" alt="Không gian quán King Coffee 2">
+                    <img src="https://media.vneconomy.vn/w800/images/upload/2021/05/24/us-cafe-2-4188-1621842940.jpg" alt="Không gian quán King Coffee 3">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TNI King Coffee. All rights reserved.</p>
+            <p>Địa chỉ: 208 Đ. Nguyễn Duy, Phường Hưng Phú, Quận 8, TP.Hồ Chí Minh</p>
+            <p>Hotline: 1900 588 878</p>
+        </div>
+    </footer>
+
+</body>
+</html>
