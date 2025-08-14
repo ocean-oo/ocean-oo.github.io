@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kế Hoạch Làm Việc 1 Tuần Cho IT Full-Stack</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f7f9;
+      color: #333;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #0056b3;
+    }
+    h1 {
+      text-align: center;
+      border-bottom: 2px solid #0056b3;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .day-plan {
+      margin-bottom: 25px;
+      border-left: 4px solid #007bff;
+      padding-left: 20px;
+      background-color: #fdfdff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    .day-plan h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      background: #e9ecef;
+      margin-bottom: 8px;
+      padding: 12px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+    }
+    li::before {
+      content: '✓';
+      color: #28a745;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .task-time {
+      font-weight: bold;
+      color: #555;
+      min-width: 130px;
+    }
+    .task-desc {
+      flex-grow: 1;
+    }
+    .note {
+      background-color: #fff3cd;
+      border-left: 4px solid #ffc107;
+      padding: 15px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+    .note p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Kế Hoạch Làm Việc Trong 1 Tuần Của Lập Trình Viên Full-Stack</h1>
+
+    <div class="note">
+      <p><strong>Lưu ý:</strong> Kế hoạch này mang tính chất tham khảo, dựa trên mô hình làm việc Agile/Scrum phổ biến. Lịch trình thực tế có thể thay đổi tùy thuộc vào dự án, yêu cầu của công ty và tình huống cụ thể. Một lập trình viên full-stack cần có khả năng xử lý cả công việc front-end và back-end.</p>
+    </div>
+
+    <div class="day-plan">
+      <h3>Thứ Hai: Lên Kế Hoạch & Bắt Đầu Sprint</h3>
+      <ul>
+        <li><span class="task-time">09:00 - 10:30:</span> <span class="task-desc"><strong>Sprint Planning (Lập kế hoạch Sprint):</strong> Cùng team xác định mục tiêu cho Sprint mới. Lựa chọn các công việc (user stories/tasks) từ Product Backlog để thực hiện trong tuần.</span></li>
+        <li><span class="task-time">10:30 - 12:00:</span> <span class="task-desc"><strong>Phân tích & Thiết kế:</strong> Phân tích các task được giao. Thiết kế cấu trúc dữ liệu, API endpoints, và kế hoạch cho các component UI/UX.</span></li>
+        <li><span class="task-time">13:30 - 17:00:</span> <span class="task-desc"><strong>Phát triển Back-end:</strong> Bắt đầu xây dựng các API, xử lý logic nghiệp vụ, và làm việc với cơ sở dữ liệu cho các task đầu tiên.</span></li>
+        <li><span class="task-time">17:00 - 17:30:</span> <span class="task-desc"><strong>Tổng kết & Commit code:</strong> Review lại công việc trong ngày, ghi chú lại các vấn đề và đẩy code lên hệ thống quản lý phiên bản (Git).</span></li>
+      </ul>
+    </div>
+
+    <div class="day-plan">
+      <h3>Thứ Ba: Phát Triển Toàn Diện (Full-Stack)</h3>
+      <ul>
+        <li><span class="task-time">09:00 - 09:15:</span> <span class="task-desc"><strong>Daily Stand-up Meeting:</strong> Họp nhanh đầu ngày để cập nhật tiến độ, khó khăn và kế hoạch trong ngày.</span></li>
+        <li><span class="task-time">09:15 - 12:00:</span> <span class="task-desc"><strong>Phát triển Front-end:</strong> Xây dựng giao diện người dùng dựa trên thiết kế. Tích hợp API đã làm từ hôm trước. Sử dụng các framework như React, Angular, hoặc Vue.js.</span></li>
+        <li><span class="task-time">13:30 - 16:30:</span> <span class="task-desc"><strong>Kết nối Front-end & Back-end:</strong> Đảm bảo dữ liệu được luân chuyển thông suốt giữa client và server. Xử lý các lỗi tích hợp.</span></li>
+        <li><span class="task-time">16:30 - 17:30:</span> <span class="task-desc"><strong>Viết Unit Test:</strong> Viết các bài kiểm thử đơn vị cho cả code back-end và front-end để đảm bảo chất lượng.</span></li>
+      </ul>
+    </div>
+
+    <div class="day-plan">
+      <h3>Thứ Tư: Tập Trung Vào Hoàn Thiện Tính Năng</h3>
+      <ul>
+        <li><span class="task-time">09:00 - 09:15:</span> <span class="task-desc"><strong>Daily Stand-up Meeting.</strong></span></li>
+        <li><span class="task-time">09:15 - 12:00:</span> <span class="task-desc"><strong>Hoàn thiện tính năng:</strong> Tiếp tục lập trình, tập trung hoàn thành một hoặc nhiều tính năng đã nhận trong Sprint.</span></li>
+        <li><span class="task-time">13:30 - 15:30:</span> <span class="task-desc"><strong>Code Review:</strong> Dành thời gian review code của các thành viên khác trong nhóm hoặc nhờ người khác review code của mình để cải thiện chất lượng và chia sẻ kiến thức.</span></li>
+        <li><span class="task-time">15:30 - 17:30:</span> <span class="task-desc"><strong>Xử lý Bug & Tối ưu hóa:</strong> Sửa các lỗi phát sinh trong quá trình phát triển và kiểm thử. Tối ưu hóa hiệu suất ứng dụng nếu cần.</span></li>
+      </ul>
+    </div>
+
+    <div class="day-plan">
+      <h3>Thứ Năm: Kiểm Thử & Tích Hợp</h3>
+      <ul>
+        <li><span class="task-time">09:00 - 09:15:</span> <span class="task-desc"><strong>Daily Stand-up Meeting.</strong></span></li>
+        <li><span class="task-time">09:15 - 12:00:</span> <span class="task-desc"><strong>Kiểm thử tích hợp (Integration Testing):</strong> Kiểm tra sự tương tác giữa các module/component khác nhau của hệ thống.</span></li>
+        <li><span class="task-time">13:30 - 16:00:</span> <span class="task-desc"><strong>Viết tài liệu:</strong> Cập nhật tài liệu kỹ thuật, tài liệu API, hoặc hướng dẫn sử dụng cho các tính năng vừa phát triển.</span></li>
+        <li><span class="task-time">16:00 - 17:30:</span> <span class="task-desc"><strong>Chuẩn bị cho Demo:</strong> Chuẩn bị môi trường, dữ liệu và kịch bản để trình diễn các tính năng đã hoàn thành.</span></li>
+      </ul>
+    </div>
+
+    <div class="day-plan">
+      <h3>Thứ Sáu: Review & Cải Tiến</h3>
+      <ul>
+        <li><span class="task-time">09:00 - 10:30:</span> <span class="task-desc"><strong>Sprint Review/Demo:</strong> Trình diễn các tính năng đã hoàn thành cho Product Owner và các bên liên quan để nhận phản hồi.</span></li>
+        <li><span class="task-time">10:30 - 11:30:</span> <span class="task-desc"><strong>Sprint Retrospective (Cải tiến Sprint):</strong> Họp team để nhìn lại quá trình làm việc trong tuần, thảo luận về những gì đã làm tốt và những gì cần cải thiện cho Sprint tiếp theo.</span></li>
+        <li><span class="task-time">13:30 - 16:00:</span> <span class="task-desc"><strong>Refactor code & Dọn dẹp:</strong> Dựa trên phản hồi hoặc các vấn đề phát hiện được, dành thời gian để tái cấu trúc, làm sạch code.</span></li>
+        <li><span class="task-time">16:00 - 17:00:</span> <span class="task-desc"><strong>Học hỏi & Nghiên cứu:</strong> Dành thời gian cuối tuần để tự học công nghệ mới, đọc blog kỹ thuật, hoặc nghiên cứu các giải pháp cho những thách thức hiện tại.</span></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
