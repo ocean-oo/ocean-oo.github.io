@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNI King Coffee - Vua Cà Phê Việt Nam</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a1a1a;
+            padding: 20px 0;
+            border-bottom: 1px solid #c4a66a;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #c4a66a;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('https://file.hstatic.net/1000075449/file/banner-web-king-coffee-new_b37532d1691c496c8d7e48b894170366.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            color: #c4a66a;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            background-color: #c4a66a;
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #fff;
+        }
+
+        /* Story Section */
+        .story {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .story-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .story h2 {
+            font-size: 2.5em;
+            color: #c4a66a;
+            margin-bottom: 20px;
+        }
+
+        .story p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 80px 0;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #c4a66a;
+            margin-bottom: 50px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #1a1a1a;
+            border: 1px solid #c4a66a;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            font-size: 1.5em;
+            color: #c4a66a;
+            margin: 20px 0;
+        }
+
+        .product-card p {
+            padding: 0 20px 20px;
+        }
+
+        /* Franchise Section */
+        .franchise {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+        }
+
+        .franchise-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .franchise-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .franchise h2 {
+            font-size: 2.5em;
+            color: #c4a66a;
+            margin-bottom: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 40px 0;
+            border-top: 1px solid #c4a66a;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-logo {
+            width: 100px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+        }
+
+        .social-links img {
+            width: 30px;
+            transition: opacity 0.3s;
+        }
+
+        .social-links img:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Logo-king-coffee.png/425px-Logo-king-coffee.png" alt="King Coffee Logo" class="logo"></a>
+                <ul>
+                    <li><a href="#story">Câu Chuyện</a></li>
+                    <li><a href="#products">Sản Phẩm</a></li>
+                    <li><a href="#franchise">Nhượng Quyền</a></li>
+                    <li><a href="#">Cửa Hàng</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>King Coffee - Sáng tạo để thành công</h1>
+            <p>Khám phá hương vị cà phê Việt Nam đẳng cấp thế giới.</p>
+            <a href="#products" class="cta-button">Mua Ngay</a>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>Hành Trình Chinh Phục Thế Giới</h2>
+                    <p>Được sáng lập bởi bà Lê Hoàng Diệp Thảo, một người có hơn 20 năm kinh nghiệm trong ngành cà phê, King Coffee ra mắt lần đầu tại Mỹ vào năm 2016. Với khát vọng nâng tầm cà phê Việt Nam trên bản đồ thế giới, King Coffee đã nhanh chóng có mặt tại hơn 120 quốc gia, mang hương vị quê nhà đến với bạn bè quốc tế.</p>
+                    <p>Chúng tôi kết hợp những hạt cà phê tinh túy từ các vùng trồng nổi tiếng của Việt Nam và thế giới cùng bí quyết rang xay phương Đông độc đáo, tạo nên những sản phẩm chất lượng hảo hạng.</p>
+                </div>
+                <div class="story-image">
+                    <img src="https://vneconomy.mediacdn.vn/thumb_w/1000/2021/5/25/king-coffee-store-in-anaheim-california-1621933703816158284581-crop-16219337145461530911068.jpg" alt="Bà Lê Hoàng Diệp Thảo và cửa hàng King Coffee">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Sản Phẩm Đa Dạng</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://cdn.tgdd.vn/Products/Images/2884/258909/bhx/ca-phe-hoa-tan-3-trong-1-king-coffee-hop-18-goi-202211021430589676.jpg" alt="Cà phê hòa tan">
+                    <h3>Cà Phê Hòa Tan</h3>
+                    <p>Tiện lợi, nhanh chóng nhưng vẫn giữ trọn hương vị đậm đà, thơm ngon cho một ngày mới năng động.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://product.hstatic.net/1000075449/product/ca-phe-rang-xay-king-coffee-premium-blend-450g_09c31405105244589d97275037d00f7b_large.jpg" alt="Cà phê rang xay">
+                    <h3>Cà Phê Rang Xay</h3>
+                    <p>Dành cho những người sành cà phê, muốn tự tay pha chế và thưởng thức hương vị nguyên bản.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://product.hstatic.net/1000075449/product/ca-phe-hat-nguyen-king-coffee-espresso-340g_7c4d7e97d4024b33b93478951239c09c_large.jpg" alt="Cà phê nguyên hạt">
+                    <h3>Cà Phê Nguyên Hạt</h3>
+                    <p>Tuyển chọn từ những vùng trồng cà phê nổi tiếng nhất thế giới, mang đến trải nghiệm đỉnh cao.</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://bizweb.dktcdn.net/thumb/large/100/418/395/products/caphengamlanhkingrtd.jpg" alt="Cà phê uống liền (RTD)">
+                    <h3>Cà Phê Uống Liền (RTD)</h3>
+                    <p>Sảng khoái tức thì, đậm vị cà phê, sẵn sàng đồng hành cùng bạn mọi lúc mọi nơi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Section -->
+    <section id="franchise" class="franchise">
+        <div class="container">
+            <div class="franchise-content">
+                <div class="franchise-image">
+                    <img src="https://images.foody.vn/res/g90/892288/prof/s/foody-upload-api-foody-mobile-king-coffee-2-190620110137.jpg" alt="Không gian quán King Coffee">
+                </div>
+                <div class="franchise-text">
+                    <h2>Trở Thành Đối Tác Của King Coffee</h2>
+                    <p>King Coffee mang đến cơ hội hợp tác nhượng quyền với mô hình kinh doanh đa dạng, từ quán cà phê cao cấp đến các ki-ốt tiện lợi. Chúng tôi cam kết đồng hành cùng đối tác trên con đường thành công với sự hỗ trợ toàn diện về thương hiệu, vận hành và marketing.</p>
+                    <a href="#" class="cta-button">Tìm Hiểu Thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Logo-king-coffee.png/425px-Logo-king-coffee.png" alt="King Coffee Logo" class="footer-logo"></a>
+            <div class="social-links">
+                <a href="#"><img src="https://www.facebook.com/kingcoffee.official/photos/a.1889249781313383/2767083030196716/?type=3" alt="Facebook"></a>
+                <a href="#"><img src="https://www.instagram.com/kingcoffee_official/" alt="Instagram"></a>
+                <a href="#"><img src="https://www.youtube.com/channel/UCa5sZ-6gZ-2Q-1d-c-1f5wA" alt="YouTube"></a>
+            </div>
+            <p>&copy; 2025 TNI King Coffee. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
